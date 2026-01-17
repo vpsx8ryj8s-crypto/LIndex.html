@@ -57,4 +57,55 @@
 </div>
 
 <!-- ===== SVG START ===== -->
-<!-- DEIN SVG (leicht angepasst:
+<!-- DEIN SVG (leicht angepasst: onclick & class) -->
+
+<svg
+   viewBox="0 0 210 297"
+   xmlns="http://www.w3.org/2000/svg">
+
+<g id="ausmalbild">
+    <!-- Beispiel: alle Pfade anklickbar -->
+    <!-- Dein kompletter SVG-Code -->
+    <!-- WICHTIG: fill bleibt white -->
+
+    <!-- ↓↓↓ DEIN ORIGINAL-SVG-INHALT ↓↓↓ -->
+
+    <!-- ICH ZEIGE NUR EIN BEISPIEL-PATH -->
+    <!-- DEINE DATEI HAT SEHR VIELE PATHS – DAS IST OK -->
+
+    <!-- ALLE <path> funktionieren automatisch -->
+
+    <!-- BEGINN SVG -->
+    <!-- (Hier ist dein SVG stark gekürzt dargestellt) -->
+
+    <path onclick="fillPath(evt)"
+          fill="#ffffff"
+          stroke="#000000"
+          stroke-width="0.6"
+          d="m 192.11942,41.323636 c 1.52017,-0.132828 2.96093,-0.176228 4.53544,-0.136623 ..."/>
+
+    <!-- ⚠️
+    In DEINER Datei:
+    - alle <path> einfach so lassen
+    - nur onclick="fillPath(evt)" hinzufügen
+    -->
+
+</g>
+</svg>
+
+<!-- ===== SVG ENDE ===== -->
+
+<script>
+let currentColor = "red";
+
+function setColor(color) {
+    currentColor = color;
+}
+
+function fillPath(evt) {
+    evt.target.style.fill = currentColor;
+}
+</script>
+
+</body>
+</html>
